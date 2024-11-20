@@ -6052,6 +6052,22 @@ vimeo:
         base_url: https://api.vimeo.com
     docs: https://docs.nango.dev/integrations/all/vimeo
 
+vitally:
+    display_name: Vitally
+    categories:
+        - crm
+    auth_mode: BASIC
+    proxy:
+        base_url: https://${connectionConfig.domain}
+    docs: https://docs.nango.dev/integrations/all/vitally
+    connection_config:
+        domain:
+            type: string
+            title: Vitally domain
+            description: The domain of your Vitally REST API
+            example: yoursubdomain.rest.vitally.io
+            prefix: https
+
 vimeo-basic:
     display_name: Vimeo (basic auth)
     categories:
